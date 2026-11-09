@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090713">
+
+  <!-- Primary SEO -->
+  <title>Cosmic Flow — 3D Coverflow Gallery | mrchandrayee</title>
+  <meta name="description" content="A stunning 3D coverflow gallery with CSS perspective, cinematic scenes, keyboard navigation, touch swipe, and autoplay. Pure HTML, CSS & JavaScript — no dependencies.">
+  <meta name="keywords" content="3D gallery, coverflow, CSS 3D, JavaScript gallery, animated gallery, web design, mrchandrayee, Chandrayee">
+  <meta name="author" content="mrchandrayee">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mrchandrayee.github.io/3d-coverflow-gallery/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrchandrayee.github.io/3d-coverflow-gallery/">
+  <meta property="og:title" content="Cosmic Flow — 3D Coverflow Gallery | mrchandrayee">
+  <meta property="og:description" content="A stunning 3D coverflow gallery with CSS perspective, cinematic scenes, keyboard navigation, touch swipe, and autoplay. Pure HTML, CSS & JavaScript.">
+  <meta property="og:image" content="https://mrchandrayee.github.io/3d-coverflow-gallery/preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mrchandrayee.github.io/3d-coverflow-gallery/">
+  <meta name="twitter:title" content="Cosmic Flow — 3D Coverflow Gallery | mrchandrayee">
+  <meta name="twitter:description" content="A stunning 3D coverflow gallery with CSS perspective, cinematic scenes, keyboard navigation, touch swipe, and autoplay.">
+  <meta name="twitter:image" content="https://mrchandrayee.github.io/3d-coverflow-gallery/preview.png">
+  <meta name="twitter:creator" content="@mrchandrayee">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Cosmic Flow — 3D Coverflow Gallery",
+    "description": "A dependency-free 3D image carousel with CSS perspective, cinematic scenes, keyboard navigation, touch swipe, and autoplay.",
+    "url": "https://mrchandrayee.github.io/3d-coverflow-gallery/",
+    "author": {
+      "@type": "Person",
+      "name": "mrchandrayee",
+      "url": "https://github.com/mrchandrayee"
+    },
+    "applicationCategory": "WebApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Cosmic Flow home"><span class="brand-mark">✦</span> COSMIC FLOW</a>
+      <span class="eyebrow">VISUAL EXPERIENCE / 001</span>
+      <button class="autoplay-toggle" id="autoplay" type="button" aria-pressed="true">Ⅱ <span>PAUSE</span></button>
+    </header>
+
+    <section class="intro">
+      <p class="kicker">A JOURNEY THROUGH IMAGINATION</p>
+      <h1>Explore the <span>unknown.</span></h1>
+      <p class="subhead">A collection of moments, places and dreamlike worlds.</p>
+    </section>
+
+    <section class="gallery" aria-label="3D image gallery">
+      <button class="nav prev" id="prev" aria-label="Previous image">‹</button>
+      <div class="deck" id="deck">
+        <article class="card" data-title="Lunar Dreams" data-caption="A quiet night beneath the moon">
+          <div class="art moon"><span class="moon-disc"></span><span class="mountain m1"></span><span class="mountain m2"></span><span class="stars"></span></div>
+          <div class="card-label"><small>01 / NIGHTSCAPE</small><h2>Lunar Dreams</h2></div>
+        </article>
+        <article class="card" data-title="Solar Bloom" data-caption="Where light meets the horizon">
+          <div class="art solar"><span class="sun"></span><span class="horizon"></span><span class="palm palm-a"></span><span class="palm palm-b"></span></div>
+          <div class="card-label"><small>02 / AFTERGLOW</small><h2>Solar Bloom</h2></div>
+        </article>
+        <article class="card" data-title="Golden Hour" data-caption="A moment suspended in time">
+          <div class="art golden"><span class="sun"></span><span class="island"></span><span class="deer">♟</span><span class="reflection"></span></div>
+          <div class="card-label"><small>03 / STILLNESS</small><h2>Golden Hour</h2></div>
+        </article>
+        <article class="card" data-title="Silent Peaks" data-caption="Find your own way above the clouds">
+          <div class="art peaks"><span class="moon-disc"></span><span class="pagoda">⌂</span><span class="mountain m1"></span><span class="mountain m2"></span></div>
+          <div class="card-label"><small>04 / HIGHLANDS</small><h2>Silent Peaks</h2></div>
+        </article>
+        <article class="card" data-title="Crimson Dusk" data-caption="The last light of another world">
+          <div class="art crimson"><span class="red-sun"></span><span class="ridge"></span><span class="ridge r2"></span></div>
+          <div class="card-label"><small>05 / DEEP SPACE</small><h2>Crimson Dusk</h2></div>
+        </article>
+      </div>
+      <button class="nav next" id="next" aria-label="Next image">›</button>
+    </section>
+
+    <footer class="gallery-footer">
+      <div class="current"><span id="current-number">03</span><span class="rule"></span><span class="total">05</span></div>
+      <div class="caption"><strong id="active-title">Golden Hour</strong><span id="active-caption">A moment suspended in time</span></div>
+      <div class="dots" id="dots" aria-label="Choose image"></div>
+    </footer>
+    <p class="hint">DRAG TO EXPLORE <span>·</span> USE ← → KEYS</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
